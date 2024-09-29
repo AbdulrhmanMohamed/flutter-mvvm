@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:new_flutter/presentation/resources/routes_manager.dart';
+import 'package:new_flutter/presentation/resources/theme_manager.dart';
 
 class MYApp extends StatefulWidget {
 // named constructor to make the constructor private
@@ -16,12 +18,15 @@ class MYApp extends StatefulWidget {
 class _MYAppState extends State<MYApp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text("hello World!!"),
-        ),
-      ),
+    return  MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme:getApplicationThemeData(),
+
+      // this means invoke this function when need to handle new route 
+      // this function should be returning new function
+      onGenerateRoute: RouteGenerator.getRoute,
+      initialRoute: Routes.splashRoute,
+
     );
   }
 }

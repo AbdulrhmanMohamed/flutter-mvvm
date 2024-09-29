@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:new_flutter/presentaion/resources/color_manager.dart';
-import 'package:new_flutter/presentaion/resources/font_manager.dart';
-import 'package:new_flutter/presentaion/resources/styles_manager.dart';
-import 'package:new_flutter/presentaion/resources/values_manager.dart';
+import 'package:new_flutter/presentation/resources/color_manager.dart';
+import 'package:new_flutter/presentation/resources/font_manager.dart';
+import 'package:new_flutter/presentation/resources/styles_manager.dart';
+import 'package:new_flutter/presentation/resources/values_manager.dart';
 
-ThemeData getAppThemeData() {
+ThemeData getApplicationThemeData() {
   return ThemeData(
     // color theme
     primaryColor: ColorManager.primaryColor,
@@ -24,6 +24,7 @@ ThemeData getAppThemeData() {
     // appbar theme
 
     appBarTheme: AppBarTheme(
+      
       centerTitle: true,
       color: ColorManager.primaryColor,
       shadowColor: ColorManager.lightPrimary,

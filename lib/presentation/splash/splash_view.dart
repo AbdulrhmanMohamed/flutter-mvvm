@@ -31,7 +31,7 @@ goNext()=>Navigator.pushReplacementNamed(context,Routes.onBoardingRoute);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       
+       appBar: AppBar(backgroundColor: ColorManager.primaryColor,),
         backgroundColor: ColorManager.primaryColor,
         body: const Center(
           child: Image(image: AssetImage(ImageAssets.splashlogo)),

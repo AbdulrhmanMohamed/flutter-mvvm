@@ -9,4 +9,5 @@ class AppStrings {
     static const onBoardingSubtitle2="this app is awesome flutter application using clean architecture";
     static const onBoardingSubtitle3="this app is awesome flutter application using clean architecture";
     static const onBoardingSubtitle4="this app is awesome flutter application using clean architecture";
+    static const onBoardingSkip="Skip";
 }
